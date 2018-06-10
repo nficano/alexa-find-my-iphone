@@ -1,0 +1,45 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+*.pyc
+*.pyo
+
+Icon
+/resources
+simple_contacts/static/.webassets-cache
+*/**/.webassets-cache
+simple_contacts/sites/static/dist
+simple_contacts/static/css/*
+simple_contacts/static/build
+instance/settings.cfg
+instance/key.pem
+pubc
+.coverage
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+build/
+dist/
+simple_contacts.egg-info/
+.coveralls.yml
+
+simple_contacts/sites/admin/static/js/bundle.*
+simple_contacts/sites/md/static/js/bundle.*
+node_modules/
+.cache/
+.mypy_cache/
+
+# Emacs
+*~
+
+.direnv/
+/schema.json
+/admin.graphql
+**/__generated__/*
+/yarn-error.log
+.pytest_cache/*
