@@ -5,7 +5,7 @@ cwd = os.path.dirname(os.path.realpath(__file__))
 site_packages = os.path.join(cwd, 'site-packages')
 sys.path.append(site_packages)
 
-from pyicloud import PyiCloudService
+from pyicloud import PyiCloudService  # noqa
 
 
 def lambda_handler(event, context):
@@ -54,7 +54,7 @@ def get_iphones(api):
         data = device.data
         if all([
             data['deviceClass'] == 'iPhone',
-            data['isLocating'] is True
+            data['isLocating'] is True,
         ]):
             yield device
 
@@ -63,20 +63,20 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
     return {
         'outputSpeech': {
             'type': 'PlainText',
-            'text': output
+            'text': output,
         },
         'card': {
             'type': 'Simple',
             'title': f'SessionSpeechlet - {title}',
-            'content': f'SessionSpeechlet - {output}'
+            'content': f'SessionSpeechlet - {output}',
         },
         'reprompt': {
             'outputSpeech': {
                 'type': 'PlainText',
-                'text': reprompt_text
-            }
+                'text': reprompt_text,
+            },
         },
-        'shouldEndSession': should_end_session
+        'shouldEndSession': should_end_session,
     }
 
 
@@ -84,5 +84,5 @@ def build_response(session_attributes, speechlet_response):
     return {
         'version': '1.1',
         'sessionAttributes': session_attributes,
-        'response': speechlet_response
+        'response': speechlet_response,
     }
