@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-bumpversion = "*"
 
 [dev-packages]
+bumpversion = "*"
 
 [requires]
 python_version = "3.6"
