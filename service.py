@@ -9,9 +9,10 @@ from pyicloud import PyiCloudService
 
 
 def lambda_handler(event, context):
-    if event['request']['type'] == 'LaunchRequest':
+    request_type = event['request']['type']
+    if request_type == 'LaunchRequest':
         return on_launch()
-    elif event['request']['type'] == 'IntentRequest':
+    elif request_type == 'IntentRequest':
         return on_intent(event['request'])
 
 
