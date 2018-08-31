@@ -8,7 +8,7 @@ sys.path.append(site_packages)
 from pyicloud import PyiCloudService  # noqa
 
 
-def lambda_handler(event, context):
+def handler(event, context):
     request_type = event['request']['type']
     if request_type == 'LaunchRequest':
         return on_launch()

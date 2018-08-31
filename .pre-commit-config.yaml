@@ -2,50 +2,50 @@
     sha: v0.8.0
     hooks:
     -   id: check-ast
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: autopep8-wrapper
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: check-case-conflict
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: check-merge-conflict
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: detect-private-key
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: double-quote-string-fixer
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: end-of-file-fixer
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: flake8
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: requirements-txt-fixer
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
     -   id: trailing-whitespace
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
         language_version: python3.6
 -   repo: https://github.com/asottile/reorder_python_imports
     sha: v0.3.4
     hooks:
     -   id: reorder-python-imports
         language_version: python3.6
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
 -   repo: https://github.com/Lucas-C/pre-commit-hooks-safety
     sha: v1.1.0
     hooks:
     -   id: python-safety-dependencies-check
         language_version: python3.6
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
 -   repo: https://github.com/asottile/add-trailing-comma
     sha: v0.6.3
     hooks:
     -   id: add-trailing-comma
         args: ['--py36-plus']
-        exclude: '^(site-packages).*$'
+        exclude: '^(src/site-packages).*$'
